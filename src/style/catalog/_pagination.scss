@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+
+    &__arrow {
+
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__item {
+        &:active {
+            padding: 6px 14px;
+            border: 2px solid #04E277;
+            border-radius: 2px;
+        }
+
+    }
+}

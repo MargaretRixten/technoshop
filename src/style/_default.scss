@@ -46,10 +46,15 @@ html {
   h2,
   h3,
   p,
-  figure,
-  fieldset {
+  figure 
+  {
     margin: 0;
   }
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  } 
   
   iframe {
     border: none;
