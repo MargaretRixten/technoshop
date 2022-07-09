@@ -48,4 +48,12 @@
             color: $color-main;
         }
     }
+    &__copyright {
+        grid-column: 1;
+        margin-top: 50px;
+    }
+    &__by-design {
+        grid-column: 4;
+        margin-top: 50px;
+    }
 }
