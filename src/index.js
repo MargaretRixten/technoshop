@@ -7,8 +7,14 @@ import Swiper, {Thumbs, Scrollbar, Navigation, Pagination} from 'swiper';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
+import {pagination} from './modules/pagination';
 
 
+const paginationWrapper = document.querySelector('.pagination');
+const pageURL = new URL(location);
+const page = +pageURL.searchParams.get('page') || 1;
+
+pagination(paginationWrapper, 20, page, 8);
 
 const thumbSwiper = new Swiper('.card__slider-thumb', {
     spaceBetween: 44,
